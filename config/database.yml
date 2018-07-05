@@ -87,8 +87,8 @@ production:
   <<: *default
   adapter: postgresql
   encoding: utf8
-  database: d80c0r4nfh6jmm
-  username: mjqudgsuufkska
-  password: dc5640d8d299d6233e5cfc881d3d758cfee2ac1796a4f9f4ad02ce79e9cfb4c5
-  host: ec2-23-23-245-89.compute-1.amazonaws.com
+  database: <%= ENV["DATABN"] %>
+  username: <%= ENV["USER"] %>
+  password: <%= ENV["PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
   port: 5432
