@@ -4,3 +4,4 @@ class Usuario < ApplicationRecord
     validates :password, presence: true
     validates :apellido, presence: true
 end
+
